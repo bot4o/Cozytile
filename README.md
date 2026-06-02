@@ -1,81 +1,8 @@
-<div align="right">
-  <details>
-    <summary>☕ sᴜᴘᴘᴏʀᴛ ᴍʏ ᴡᴏʀᴋ</summary>
-    <p align="right">
-      <br>
-      <img src="https://img.shields.io/badge/UPI-abhaydevka169%40okicici-00BFFF?style=for-the-badge&logo=google-pay&logoColor=white"/>
-      <br>
-      <i> or Ko-Fi: https://ko-fi.com/darkkal</i>
-      <br>
-      <i>Means a lot, tysm <3</i>
-    </p>
-  </details>
-</div>
-<p align="center">
-<pre align="center">
-<a href="#setup">setup​​</a>  •  <a href="#keybinds">​keybinds​</a>  •  <a href="#gallery">​galley</a>  •  <a href="#credits">​credits</a>
-</pre>
-</p>
+# Credit
+This repo is a fork of [Darkkal44's Cozytile](https://github.com/Darkkal44/Cozytile)
+# Deployment
 
-<img id="gallery" align="center" src="./Assets/preview.png" alt="Cozytile" width="100%" style="border-radius: 10px; margin-top: 20px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
-
-<p align="center">
-  <a href="https://archlinux.org"><img src="https://img.shields.io/badge/ARCH_LINUX-000000?style=for-the-badge&logo=archlinux&logoColor=white"/></a>
-  <a href="https://qtile.org"><img src="https://img.shields.io/badge/QTILE-000000?style=for-the-badge&logo=python&logoColor=white"/></a>
-  <a href="https://github.com/Darkkal44/Cozytile/stargazers"><img src="https://img.shields.io/github/stars/Darkkal44/Cozytile?style=for-the-badge&color=000000"/></a>
-</p>
-
-</div>
-
----
-
-<br>
-
-<table width="100%">
-<tr>
-<td width="55%" valign="top">
-
-### ☕ ᴛʜᴇ ᴠɪꜱɪᴏɴ​
-A cozy rice to keep things comfy. I honestly think Qtile is way too underrated—being able to script your whole environment in Python is a superpower, and there's so much you can do with it. This is my take on showing off those possibilities with some clean, modern aesthetics.
-
-### 🍁 ᴄᴏʀᴇ ʜɪɢʜʟɪɢʜᴛꜱ
-​
-**Dynamic Themes:** `pywal` handles the heavy lifting—it pulls colors from your wallpaper and themes the whole system automatically.
-
-**System Aware:** The bar is smart enough to know if you're on a Laptop or PC, so it swaps the battery and network widgets for you.
-
-**Easy Deployment:** The installer script sets up everything—from GPU drivers to fonts and dotfiles—so you can get comfy faster.
-
-</td>
-<td width="45%" valign="top">
-
-### 📚 ᴛʜᴇ ꜱᴛᴀᴄᴋ​
-
-| Component | Choice |
-| :--- | :--- |
-| **Window Manager** | Qtile |
-| **Compositor** | Picom |
-| **Terminal** | Alacritty |
-| **Launcher** | Rofi |
-| **Shell** | Zsh + Starship |
-| **Notifications** | Dunst |
-| **File Manager** | Thunar |
-| **Display Manager**| SDDM (Custom Themes) |
-| **Audio** | MPD + Ncmpcpp + Cava |
-
-</td>
-</tr>
-</table>
-
-<br>
-
----
-
-<div align="center">
-  <h2 id="setup"> ☁️ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ☁️ </h2>
-</div>
-
-### 🌿 ᴛʜᴇ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ᴘᴀᴛʜ (ᴀʀᴄʜ ʟɪɴᴜx)
+### Automated
 
 > [!TIP]
 > **Recommended:** For the purest experience, an automated installation script is provided. It handles AUR helpers, dependencies, custom SDDM themes, font caching, and Zsh configuration automatically.
@@ -96,7 +23,7 @@ chmod +x install.sh
 <br>
 
 <details>
-<summary><b>🌿 ᴛʜᴇ ᴍᴀɴᴜᴀʟ ᴘᴀᴛʜ </b></summary>
+<summary><b>Manual</b></summary>
 <br>
 
 If you prefer knowing exactly what goes into your system or are adapting this setup for another OS, here is the exact manual breakdown of what the installer does.
@@ -212,16 +139,11 @@ sudo reboot
 
 </details>
 
-<br>
+# Usage
+### Navigation
 
----
 
-<div align="center">
-  <h2 id="keybinds"> ⌨️ ɴᴀᴠɪɢᴀᴛɪᴏɴ ᴍᴀᴛʀɪx ⌨️ </h2>
-  <p>Master your environment from the keyboard.</p>
-</div>
-
-<table align="center" width="100%">
+<table width="100%">
   <tr>
     <td align="center" width="33%"><b>Focus & Groups</b></td>
     <td align="center" width="33%"><b>Window & Layout</b></td>
@@ -258,31 +180,3 @@ sudo reboot
     </td>
   </tr>
 </table>
-
-<br>
-
----
-
-<div align="center">
-  <h2 id="credits"> 🌙 ᴄʀᴇᴅɪᴛꜱ ᴀɴᴅ ɢʀᴀᴛɪᴛᴜᴅᴇ 🌙 </h2>
-</div>
-
-A massive thank you to the **Unixporn Discord** community for the endless support and inspiration! This project wouldn't be the same without the kindness and knowledge shared there.
-
-### ꜱᴘᴏɴꜱᴏʀꜱ
-* **[Dominik](https://github.com/TheDomCraft)** — A huge thank you for your incredible kindness and the generous tip! ☕
-
-### ᴄᴏɴᴛʀɪʙᴜᴛᴏʀꜱ
-* **phiumphium** — My good friend who spent countless hours helping me squash bugs and polish the experience. 🛠️
-
-### ꜱᴘᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ
-For their help with various some silly things:
-* **[Namish](https://namishh.com/)**
-* **[Stardust](https://star.is-a.dev/)**
-* Kaizky
----
-
-<div align="center">
-  <br>
-  <p><i>Enjoy your stay. Keep it cozy.</i></p>
-</div>
