@@ -6,4 +6,4 @@ dir="$HOME/.config/rofi/settings/launcher/"
 ## Run
 rofi \
     -show drun \
-    -theme ${dir}/cozy.rasi
+    -theme ${dir}/everforest.rasi

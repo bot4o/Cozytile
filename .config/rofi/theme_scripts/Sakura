@@ -3,6 +3,15 @@
 cp -r ~/Themes/Sakura/. ~/ &&
 wal -b 282738 -i ~/Wallpaper/120_-_KnFPX73.jpg &&
 (echo -e "[Theme]\nCurrent=Sakura" | sudo -n tee /etc/sddm.conf.d/theme.conf || true) &&
-qtile cmd-obj -o cmd -f restart
-spicetify apply || true
+~/.spicetify/spicetify config current_theme text color_scheme sakura
+~/.spicetify/spicetify apply 
+
+cat > ~/.config/gtk-3.0/settings.ini <<EOF
+[Settings]
+gtk-theme-name=Sakura_clean
+gtk-icon-theme-name=Sakura_icons
+gtk-font-name=JetBrains Mono 10
+EOF
+
 pkill dunst && dunst &
+qtile cmd-obj -o cmd -f restart

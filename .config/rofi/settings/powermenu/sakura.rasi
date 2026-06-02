@@ -117,15 +117,14 @@ listview {
 \*---------------------------------*/
 element {
     enabled:                     true;
-    padding:                     35px 0px;
+    padding:                     28px 10px;
     border-radius:               10px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
-    children:                    [ "element-text" ];
 }
 element-text {
-    font:                        "JetBrainsMono Nerd Font 32";
+    font:                        "feather bold 32";
     background-color:            transparent;
     text-color:                  inherit;
     cursor:                      inherit;
