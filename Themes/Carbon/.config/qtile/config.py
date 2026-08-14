@@ -91,25 +91,42 @@ keys = [
 
 
 
-groups = [Group(f"{i+1}", label="") for i in range(8)]
+group_matches = {
+    "1": [],
+    "2": [],
+    "3": [Match(wm_class="md.obsidian.obsidian")],
+    "4": [Match(wm_class="Anki")],
+    "5": [],
+    "6": [Match(wm_class="easyeffects")],
+    "7": [Match(wm_class="discord")],
+    "8": [Match(wm_class="Spotify")],
+}
+
+groups = []
+
+for i in range(1, 9):
+    name = str(i)
+    matches = group_matches.get(name, [])
+    groups.append(Group(name, label="", matches=matches))
 
 for i in groups:
     keys.extend(
-            [
-                Key(
-                    [mod],
-                    i.name,
-                    lazy.group[i.name].toscreen(),
-                    desc="Switch to group {}".format(i.name),
-                    ),
-                Key(
-                    [mod, "shift"],
-                    i.name,
-                    lazy.window.togroup(i.name, switch_group=True),
-                    desc="Switch to & move focused window to group {}".format(i.name),
-                    ),
-                ]
-            )
+        [
+            Key(
+                [mod],
+                i.name,
+                lazy.group[i.name].toscreen(),
+                desc=f"Switch to group {i.name}",
+            ),
+            Key(
+                [mod, "shift"],
+                i.name,
+                lazy.window.togroup(i.name, switch_group=True),
+                desc=f"Switch to & move focused window to group {i.name}",
+            ),
+        ]
+    )
+
 
 
 
